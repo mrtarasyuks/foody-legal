@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use – Foody</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #F7F9F4;
+      color: #1A1A1A;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #E4EAD8;
+      padding: 18px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header .inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-mark {
+      width: 34px; height: 34px;
+      background: #6A9A0A;
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .brand h1 { font-size: 18px; font-weight: 700; }
+
+    nav { display: flex; gap: 20px; flex-shrink: 0; }
+    nav a { font-size: 13px; color: #4B5563; text-decoration: none; font-weight: 500; }
+    nav a:hover, nav a.active { color: #6A9A0A; }
+    @media (max-width: 480px) {
+      nav { gap: 12px; }
+      nav a { font-size: 12px; }
+    }
+
+    .page-wrap {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 60px;
+      width: 100%;
+    }
+
+    .doc-header {
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #E4EAD8;
+    }
+    .doc-tag {
+      display: inline-block;
+      background: #EEF4DC;
+      color: #4D7000;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .doc-header h2 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .doc-header .meta { font-size: 13px; color: #6B7280; }
+
+    .toc {
+      background: #fff;
+      border: 1px solid #E4EAD8;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc h4 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6B7280;
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      list-style: decimal;
+      padding-left: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+    }
+    @media (max-width: 520px) { .toc ol { grid-template-columns: 1fr; } }
+    .toc a { font-size: 13px; color: #4B5563; text-decoration: none; }
+    .toc a:hover { color: #6A9A0A; text-decoration: underline; }
+
+    section { margin-bottom: 40px; }
+    section h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1A1A1A;
+      padding-top: 8px;
+    }
+    p { color: #374151; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+      color: #374151;
+    }
+    li { margin-bottom: 6px; }
+    li:last-child { margin-bottom: 0; }
+
+    .highlight-box {
+      background: #FFF8E1;
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+    .highlight-box strong { color: #1A1A1A; }
+
+    .danger-box {
+      background: #FEF2F2;
+      border-left: 4px solid #EF4444;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    .info-box {
+      background: #EEF4DC;
+      border-left: 4px solid #6A9A0A;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    a { color: #6A9A0A; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #9CA3AF;
+      border-top: 1px solid #E4EAD8;
+      background: #fff;
+    }
+    footer a { color: #6B7280; text-decoration: none; margin: 0 8px; }
+    footer a:hover { text-decoration: underline; }
+    footer p + p { margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <div class="logo-mark">🥦</div>
+      <h1>Foody</h1>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html" class="active">Terms of Use</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <div class="doc-header">
+    <div class="doc-tag">Legal Document</div>
+    <h2>Terms of Use</h2>
+    <p class="meta">Effective Date: May 28, 2026 &nbsp;·&nbsp; App: Foody – AI Fridge Assistant</p>
+  </div>
+
+  <div class="toc">
+    <h4>Contents</h4>
+    <ol>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#use-of-app">Use of the App</a></li>
+      <li><a href="#user-account">User Account</a></li>
+      <li><a href="#user-content">User Content</a></li>
+      <li><a href="#ai-features">AI Features</a></li>
+      <li><a href="#food-safety">Food Safety Disclaimer</a></li>
+      <li><a href="#subscriptions">Subscriptions &amp; Payments</a></li>
+      <li><a href="#ice-rewards">ICE Virtual Rewards</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#prohibited">Prohibited Conduct</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#intellectual-property">Intellectual Property</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#changes">Changes to Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <section id="acceptance">
+    <h3>1. Acceptance of Terms</h3>
+    <p>These Terms of Use ("Terms") constitute a legally binding agreement between you ("User", "you") and the Foody development team ("we", "us", "our") governing your access to and use of the Foody mobile application ("App").</p>
+    <p>By downloading, installing, or using the App, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="privacy-policy.html">Privacy Policy</a>. If you do not agree, you must not use the App.</p>
+    <p>You must be at least 13 years old to use Foody. By using the App, you represent that you meet this age requirement.</p>
+  </section>
+
+  <section id="use-of-app">
+    <h3>2. Use of the App</h3>
+    <p>Foody is an AI-powered mobile application for personal, non-commercial use. The App provides the following core features:</p>
+    <ul>
+      <li>Fridge and pantry inventory management with AI photo recognition</li>
+      <li>Receipt scanning and food expense tracking</li>
+      <li>AI Chef chat assistant for recipes and cooking suggestions</li>
+      <li>Shopping list generation (daily and weekly)</li>
+      <li>Daily calorie, water, and macronutrient tracking</li>
+      <li>Dish of the Day suggestions based on available ingredients</li>
+      <li>Special event menu planning</li>
+      <li>Voice input for products and calorie logging</li>
+      <li>Foodygram social feed for sharing food photos (Premium)</li>
+      <li>ICE virtual rewards system</li>
+      <li>In-app games (Foody Catch)</li>
+    </ul>
+    <p>You agree to use the App only for lawful purposes and in a manner consistent with these Terms.</p>
+  </section>
+
+  <section id="user-account">
+    <h3>3. User Account</h3>
+    <p>To access most features of Foody, you must create an account using an email address and password, or via a supported third-party sign-in method (Apple, Google, or Microsoft).</p>
+    <ul>
+      <li>You are responsible for maintaining the confidentiality of your login credentials</li>
+      <li>You are responsible for all activity that occurs under your account</li>
+      <li>You must provide accurate and current information when creating your account</li>
+      <li>You must notify us immediately of any unauthorised use of your account at <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a></li>
+      <li>You may not create more than one account per person or create accounts on behalf of others without authorisation</li>
+    </ul>
+    <p>You may delete your account at any time through the app's profile settings. Upon deletion, all your data — including fridge inventory, recipes, chat history, calorie logs, and Foodygram posts — will be permanently deleted from our servers. This action cannot be undone.</p>
+  </section>
+
+  <section id="user-content">
+    <h3>4. User Content</h3>
+    <p>"User Content" means any content you create, upload, or submit through the App, including photos, text messages, voice recordings, recipe notes, product entries, and Foodygram posts.</p>
+    <p>By submitting User Content, you grant us a limited, non-exclusive licence to store, process, and display that content solely for the purpose of providing the App's features to you.</p>
+    <p>You represent and warrant that:</p>
+    <ul>
+      <li>You own or have the rights to all content you submit</li>
+      <li>Your content does not infringe any third-party intellectual property rights</li>
+      <li>Your content does not contain illegal, harmful, offensive, or misleading material</li>
+      <li>Photos you share on Foodygram do not contain identifiable people without their consent</li>
+    </ul>
+    <p>We reserve the right to remove any User Content that violates these Terms or that we determine, in our sole discretion, is inappropriate.</p>
+  </section>
+
+  <section id="ai-features">
+    <h3>5. AI Features</h3>
+    <p>Foody uses AI technology — specifically Google Gemini 2.5 Flash and Anthropic Claude — to power its recipe suggestions, product recognition, calorie estimation, chat assistant, receipt analysis, voice recognition, and other intelligent features.</p>
+
+    <div class="highlight-box">
+      <strong>AI Limitations:</strong> AI-generated content is produced automatically and may contain errors, inaccuracies, or outdated information. AI suggestions are not a substitute for professional advice.
+    </div>
+
+    <p>By using AI features, you acknowledge and agree that:</p>
+    <ul>
+      <li>Your input data (text, photos, voice, fridge contents, dietary preferences) will be transmitted to third-party AI providers (Google and Anthropic) for processing, as described in our <a href="privacy-policy.html">Privacy Policy</a></li>
+      <li>AI-generated recipes, nutritional estimates, product identifications, and suggestions may not be accurate or complete</li>
+      <li>You will not rely solely on AI output for decisions affecting health, safety, or wellbeing</li>
+      <li>AI features are subject to availability and may be altered, limited, or discontinued at any time</li>
+      <li>Certain AI features are subject to daily usage limits depending on your subscription tier</li>
+    </ul>
+    <p>We are not responsible for any loss, harm, or adverse outcome resulting from your reliance on AI-generated content.</p>
+  </section>
+
+  <section id="food-safety">
+    <h3>6. Recipes, Nutrition &amp; Food Safety Disclaimer</h3>
+    <div class="danger-box">
+      <strong>Foody does not provide medical, nutritional, dietary, or any professional advice.</strong> All content — including recipes, calorie estimates, ingredient suggestions, and nutrition information — is generated by AI and provided for general informational purposes only.
+    </div>
+    <p>You are solely responsible for:</p>
+    <ul>
+      <li>Verifying that all ingredients are safe for you and anyone you cook for, including checking for allergens and intolerances</li>
+      <li>Checking expiration dates and the physical condition of all food before consumption</li>
+      <li>Ensuring proper food storage, handling, and cooking temperatures</li>
+      <li>Consulting a qualified medical doctor, dietitian, or nutritionist before making significant dietary changes</li>
+      <li>Any adverse health outcomes resulting from recipes or food suggestions provided by the App</li>
+    </ul>
+    <p>Foody expressly disclaims any liability for food safety incidents, allergic reactions, illness, or any health-related consequences arising from your use of the App's features.</p>
+  </section>
+
+  <section id="subscriptions">
+    <h3>7. Subscriptions &amp; Payments</h3>
+
+    <p><strong>Free (Basic) Tier</strong></p>
+    <p>Foody offers a free Basic tier with limited daily usage of certain AI features (including fridge photo analysis, receipt scanning, AI Chef chat, and food photo analysis).</p>
+
+    <p><strong>Foody Premium</strong></p>
+    <p>Foody Premium is a paid subscription that unlocks unlimited or significantly increased AI feature usage, animated themes, and exclusive features including Foodygram and advanced analytics. Premium is available in the following plans:</p>
+    <ul>
+      <li>Monthly subscription</li>
+      <li>Weekly subscription</li>
+      <li>Daily subscription</li>
+      <li>Annual subscription</li>
+    </ul>
+
+    <p><strong>Payment Processing</strong></p>
+    <p>All subscription payments are processed through <strong>RevenueCat</strong> in conjunction with the platform's native payment system:</p>
+    <ul>
+      <li>iOS users: Apple App Store (Apple's payment system)</li>
+      <li>Android users: Google Play (Google's payment system)</li>
+    </ul>
+    <p>We do not directly collect or store your payment card information. All billing is managed by RevenueCat, Apple, and Google in accordance with their respective terms and policies.</p>
+
+    <p><strong>Billing &amp; Renewal</strong></p>
+    <ul>
+      <li>Subscriptions automatically renew at the end of each billing period unless cancelled at least 24 hours before the renewal date</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current subscription period</li>
+      <li>You can manage and cancel your subscription at any time through your Apple App Store or Google Play account settings</li>
+      <li>No refunds are provided for partial subscription periods unless required by applicable law</li>
+    </ul>
+
+    <p><strong>ICE-Based Premium Access</strong></p>
+    <p>Users may also activate temporary Premium access or purchase bonus feature uses by spending ICE virtual rewards within the app's in-app Shop. These transactions are processed internally and do not involve real-money payments.</p>
+
+    <div class="info-box">
+      Subscription prices may vary by region and are determined by Apple, Google, and RevenueCat. Current pricing is displayed in the app at the time of purchase.
+    </div>
+  </section>
+
+  <section id="ice-rewards">
+    <h3>8. ICE Virtual Rewards</h3>
+    <p>ICE (🧊) is Foody's in-app virtual currency. ICE has no real-world monetary value, cannot be converted to cash, and is not redeemable for any goods or services outside of Foody.</p>
+
+    <p><strong>Earning ICE:</strong></p>
+    <ul>
+      <li>Daily login bonus (one per day)</li>
+      <li>Adding products to your fridge via AI photo analysis</li>
+      <li>Playing Foody Catch (up to a daily limit)</li>
+      <li>First-time calorie goal calculation</li>
+      <li>Registration bonus</li>
+      <li>Promotional or system bonuses</li>
+    </ul>
+
+    <p><strong>Spending ICE (in-app Shop):</strong></p>
+    <ul>
+      <li>Activating temporary Foody Premium access (daily, weekly, or monthly)</li>
+      <li>Purchasing bonus uses for AI features (fridge photo analysis, receipt scanning, food photo analysis)</li>
+      <li>Physical merchandise (where available — delivery arranged separately)</li>
+    </ul>
+
+    <p><strong>ICE Rules:</strong></p>
+    <ul>
+      <li>ICE is stored per user account and is lost if your account is deleted</li>
+      <li>ICE has no expiry date under normal circumstances</li>
+      <li>We reserve the right to modify the ICE earning and redemption system at any time</li>
+      <li>ICE cannot be transferred between accounts</li>
+      <li>Any attempt to artificially inflate an ICE balance through exploits or manipulation is prohibited and may result in account termination</li>
+    </ul>
+  </section>
+
+  <section id="games">
+    <h3>9. Games</h3>
+    <p>Foody includes the in-app game <strong>Foody Catch</strong>, a casual food-catching game accessible from the Profile section.</p>
+    <ul>
+      <li>Playing Foody Catch can earn you ICE virtual rewards, subject to a daily earning cap</li>
+      <li>Game scores and earned ICE are recorded in your account</li>
+      <li>Games are provided for entertainment only and are subject to change or removal without notice</li>
+      <li>We do not guarantee game availability or specific reward rates</li>
+      <li>Game mechanics, difficulty, and reward rates may be adjusted at any time to maintain balance and fairness</li>
+    </ul>
+  </section>
+
+  <section id="prohibited">
+    <h3>10. Prohibited Conduct</h3>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any illegal, harmful, or unauthorised purpose</li>
+      <li>Attempt to reverse-engineer, decompile, or extract the App's source code</li>
+      <li>Access or tamper with systems, databases, or infrastructure not intended for your use</li>
+      <li>Circumvent rate limits, usage caps, or premium feature restrictions</li>
+      <li>Submit false, misleading, or harmful content through any App feature</li>
+      <li>Manipulate, spoof, or artificially inflate your ICE balance or game scores</li>
+      <li>Upload photos containing adult content, violence, hate symbols, or content that violates applicable law</li>
+      <li>Post Foodygram content that infringes third-party intellectual property rights</li>
+      <li>Harass, abuse, or harm other users through any App feature</li>
+      <li>Impersonate any person or entity</li>
+      <li>Use automated scripts, bots, or tools to interact with the App</li>
+      <li>Overload, disrupt, or attack our servers or infrastructure</li>
+      <li>Attempt to bypass, disable, or interfere with any security feature of the App</li>
+    </ul>
+    <p>Violation of these prohibitions may result in immediate suspension or termination of your account.</p>
+  </section>
+
+  <section id="third-parties">
+    <h3>11. Third-Party Services</h3>
+    <p>Foody integrates third-party services to deliver its features. Your use of these services is subject to their respective terms and privacy policies:</p>
+    <ul>
+      <li><strong>Supabase</strong> — backend infrastructure (database, authentication, file storage)</li>
+      <li><strong>Google Gemini</strong> — primary AI processing engine</li>
+      <li><strong>Anthropic Claude</strong> — fallback AI processing engine</li>
+      <li><strong>RevenueCat</strong> — subscription and in-app purchase management</li>
+      <li><strong>Apple App Store / Sign in with Apple</strong> — iOS distribution, payments, and authentication</li>
+      <li><strong>Google Play / Sign in with Google</strong> — Android distribution, payments, and authentication</li>
+      <li><strong>Microsoft Azure AD</strong> — optional Microsoft account sign-in</li>
+    </ul>
+    <p>We are not responsible for the content, policies, or practices of any third-party services. Issues with third-party services should be addressed directly with those providers.</p>
+  </section>
+
+  <section id="intellectual-property">
+    <h3>12. Intellectual Property</h3>
+    <p>All content in the App that is not User Content — including but not limited to the app design, layout, graphics, icons, product catalogue images, code, text, and AI-system prompts — is owned by or licensed to us and is protected by applicable copyright, trademark, and other intellectual property laws.</p>
+    <p>You are granted a limited, personal, non-transferable, non-sublicensable, revocable licence to use the App for its intended personal purposes in accordance with these Terms.</p>
+    <p>You may not copy, reproduce, distribute, modify, create derivative works from, or commercially exploit any part of the App without our express written permission.</p>
+    <p>AI-generated content produced by the App (recipes, suggestions, analyses) is provided to you for personal use only. We make no warranty regarding intellectual property rights in AI-generated output.</p>
+  </section>
+
+  <section id="termination">
+    <h3>13. Termination</h3>
+    <p>We reserve the right to suspend or terminate your account and access to the App at any time, with or without notice, for reasons including but not limited to:</p>
+    <ul>
+      <li>Violation of these Terms</li>
+      <li>Fraudulent, abusive, or illegal activity</li>
+      <li>Requests from law enforcement or regulatory authorities</li>
+      <li>Extended periods of account inactivity</li>
+      <li>Discontinuation of the App or relevant features</li>
+    </ul>
+    <p>You may terminate your account at any time by deleting it through the app settings or by contacting us at <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a>.</p>
+    <p>Upon termination, your right to use the App ceases immediately. Sections of these Terms that by their nature should survive termination (including disclaimers, limitation of liability, and intellectual property provisions) will continue to apply.</p>
+    <p>Active paid subscriptions terminated by us without cause will be refunded on a pro-rata basis at our discretion. Refunds for user-initiated cancellations are governed by Apple's and Google's refund policies.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h3>14. Disclaimer of Warranties</h3>
+    <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+    <p>We do not warrant that:</p>
+    <ul>
+      <li>The App will be uninterrupted, error-free, or available at all times</li>
+      <li>AI-generated content will be accurate, complete, or suitable for your needs</li>
+      <li>The App will meet your specific requirements</li>
+      <li>Any defects or errors will be corrected</li>
+      <li>The App or its servers are free of viruses or other harmful components</li>
+    </ul>
+    <p>Some jurisdictions do not allow the exclusion of implied warranties, so some of the above exclusions may not apply to you.</p>
+  </section>
+
+  <section id="liability">
+    <h3>15. Limitation of Liability</h3>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES — INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, PERSONAL INJURY, FOOD SAFETY INCIDENTS, ALLERGIC REACTIONS, OR PROPERTY DAMAGE — ARISING FROM OR RELATED TO YOUR USE OF THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+    <p>OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE APP SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR USD $10, WHICHEVER IS GREATER.</p>
+    <p>Some jurisdictions do not allow certain limitations of liability; in such jurisdictions, our liability is limited to the fullest extent permitted by law.</p>
+  </section>
+
+  <section id="changes">
+    <h3>16. Changes to Terms</h3>
+    <p>We may update these Terms from time to time to reflect changes in the App, applicable laws, or our business practices. When we make material changes, we will update the "Effective Date" at the top of this page.</p>
+    <p>For significant changes, we will notify you through the App or by email. Continued use of the App after updated Terms are published constitutes your acceptance of the new Terms.</p>
+    <p>If you do not agree to the updated Terms, you must stop using the App and delete your account.</p>
+  </section>
+
+  <section id="contact">
+    <h3>17. Contact</h3>
+    <p>If you have any questions, feedback, or concerns about these Terms, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a></li>
+      <li><strong>App:</strong> Foody – AI Fridge Assistant</li>
+    </ul>
+    <p>For account deletion requests, data inquiries, or legal notices, please use the same email address. We aim to respond within 30 days.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Foody. All rights reserved.</p>
+  <p>
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-use.html">Terms of Use</a>
+  </p>
+</footer>
+
+</body>
+</html>

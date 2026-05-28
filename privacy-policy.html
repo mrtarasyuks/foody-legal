@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Foody</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #F7F9F4;
+      color: #1A1A1A;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #E4EAD8;
+      padding: 18px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header .inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-mark {
+      width: 34px; height: 34px;
+      background: #6A9A0A;
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .brand h1 { font-size: 18px; font-weight: 700; }
+
+    nav { display: flex; gap: 20px; flex-shrink: 0; }
+    nav a { font-size: 13px; color: #4B5563; text-decoration: none; font-weight: 500; }
+    nav a:hover, nav a.active { color: #6A9A0A; }
+    @media (max-width: 480px) {
+      nav { gap: 12px; }
+      nav a { font-size: 12px; }
+    }
+
+    .page-wrap {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 60px;
+      width: 100%;
+    }
+
+    .doc-header {
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #E4EAD8;
+    }
+    .doc-tag {
+      display: inline-block;
+      background: #EEF4DC;
+      color: #4D7000;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .doc-header h2 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .doc-header .meta {
+      font-size: 13px;
+      color: #6B7280;
+    }
+
+    .toc {
+      background: #fff;
+      border: 1px solid #E4EAD8;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc h4 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6B7280;
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      list-style: decimal;
+      padding-left: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+    }
+    @media (max-width: 520px) { .toc ol { grid-template-columns: 1fr; } }
+    .toc a { font-size: 13px; color: #4B5563; text-decoration: none; }
+    .toc a:hover { color: #6A9A0A; text-decoration: underline; }
+
+    section { margin-bottom: 40px; }
+    section h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1A1A1A;
+      padding-top: 8px;
+    }
+    p { color: #374151; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+      color: #374151;
+    }
+    li { margin-bottom: 6px; }
+    li:last-child { margin-bottom: 0; }
+
+    .highlight-box {
+      background: #FFF8E1;
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+    .highlight-box strong { color: #1A1A1A; }
+
+    .info-box {
+      background: #EEF4DC;
+      border-left: 4px solid #6A9A0A;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    a { color: #6A9A0A; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #9CA3AF;
+      border-top: 1px solid #E4EAD8;
+      background: #fff;
+    }
+    footer a { color: #6B7280; text-decoration: none; margin: 0 8px; }
+    footer a:hover { text-decoration: underline; }
+    footer p + p { margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <div class="logo-mark">🥦</div>
+      <h1>Foody</h1>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html" class="active">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <div class="doc-header">
+    <div class="doc-tag">Legal Document</div>
+    <h2>Privacy Policy</h2>
+    <p class="meta">Effective Date: May 28, 2026 &nbsp;·&nbsp; App: Foody – AI Fridge Assistant</p>
+  </div>
+
+  <div class="toc">
+    <h4>Contents</h4>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Data</a></li>
+      <li><a href="#ai-processing">AI Processing</a></li>
+      <li><a href="#photos-voice">Photos & Voice</a></li>
+      <li><a href="#foodygram">Foodygram Social Feed</a></li>
+      <li><a href="#subscriptions">Subscriptions & Payments</a></li>
+      <li><a href="#data-storage">Data Storage & Security</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#no-advice">Medical & Dietary Disclaimer</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <section id="overview">
+    <h3>1. Overview</h3>
+    <p>Foody ("we", "our", or "us") is an AI-powered mobile application that helps you manage your fridge inventory, discover recipes, track nutrition, and more. This Privacy Policy explains what personal data we collect, why we collect it, how we use it, and your rights regarding your data.</p>
+    <p>By creating an account and using Foody, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the app.</p>
+    <div class="info-box">
+      This policy applies to Foody for iOS and Android. The app is operated by the Foody development team. Our support email is <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a>.
+    </div>
+  </section>
+
+  <section id="data-collected">
+    <h3>2. Data We Collect</h3>
+    <p>We collect information you provide directly and information generated through your use of the app.</p>
+
+    <p><strong>Account &amp; Profile Data</strong></p>
+    <ul>
+      <li>Email address and password (used for authentication)</li>
+      <li>Full name, age, and gender (optional, used to personalise AI suggestions)</li>
+      <li>Profile photo / avatar</li>
+      <li>Dietary type (e.g. vegetarian, vegan), food restrictions, and excluded ingredients</li>
+      <li>Daily calorie goal</li>
+    </ul>
+
+    <p><strong>Fridge &amp; Inventory Data</strong></p>
+    <ul>
+      <li>Product names, categories, quantities, units, storage locations, and expiration dates you enter or that are detected by AI from photos</li>
+      <li>Purchase history and receipt data (product names, prices, categories) from scanned receipts</li>
+      <li>Shopping lists generated by AI or created manually</li>
+    </ul>
+
+    <p><strong>Nutrition &amp; Health Data</strong></p>
+    <ul>
+      <li>Calorie intake logs (source, amount, description, date)</li>
+      <li>Macronutrient data (protein, fat, carbohydrates)</li>
+      <li>Water intake logs</li>
+    </ul>
+
+    <p><strong>AI Chat &amp; Recipe Data</strong></p>
+    <ul>
+      <li>Chat messages you send to the AI Chef assistant</li>
+      <li>Recipes saved or generated within the app</li>
+      <li>Chat session history</li>
+    </ul>
+
+    <p><strong>Media &amp; Input</strong></p>
+    <ul>
+      <li>Photos you take or select from your gallery (fridge photos, receipt photos, food photos)</li>
+      <li>Voice recordings you make for product or calorie recognition</li>
+    </ul>
+
+    <p><strong>Game &amp; Rewards Data</strong></p>
+    <ul>
+      <li>ICE virtual currency balance and transaction history</li>
+      <li>In-app game scores (Foody Catch)</li>
+    </ul>
+
+    <p><strong>Technical &amp; Usage Data</strong></p>
+    <ul>
+      <li>App language preference</li>
+      <li>Theme and display preferences</li>
+      <li>Notification preferences</li>
+      <li>Usage counts for rate-limited features (stored locally on device)</li>
+    </ul>
+  </section>
+
+  <section id="how-we-use">
+    <h3>3. How We Use Your Data</h3>
+    <p>We use your data solely to provide, improve, and personalise the Foody experience:</p>
+    <ul>
+      <li><strong>Authentication &amp; account management:</strong> to create and secure your account</li>
+      <li><strong>Personalised AI features:</strong> your dietary preferences, fridge contents, and profile data are sent to AI services to generate relevant recipes, shopping lists, dish suggestions, and nutrition estimates</li>
+      <li><strong>Fridge management:</strong> to store and display your inventory, expiration dates, and categories</li>
+      <li><strong>Calorie &amp; nutrition tracking:</strong> to calculate and display your daily nutrition progress</li>
+      <li><strong>Receipt analysis:</strong> to extract product names and prices from photos of receipts using AI</li>
+      <li><strong>Spending analytics:</strong> to show you spending summaries and category breakdowns from your receipts</li>
+      <li><strong>Shopping lists:</strong> to generate and store AI-produced shopping lists</li>
+      <li><strong>AI Chef chat:</strong> to process your messages and fridge contents to produce cooking suggestions and recipes</li>
+      <li><strong>Foodygram (social feed):</strong> to publish, display, and moderate food posts (Premium feature)</li>
+      <li><strong>ICE rewards:</strong> to track your virtual currency balance and reward history</li>
+      <li><strong>Customer support:</strong> to respond to your enquiries</li>
+    </ul>
+    <p>We do not sell your personal data. We do not use your data for advertising.</p>
+  </section>
+
+  <section id="ai-processing">
+    <h3>4. AI Processing</h3>
+    <p>Foody uses AI to power its core features. To provide these features, certain data is transmitted to third-party AI providers via our secure server-side proxy (Supabase Edge Functions). <strong>Your API keys and credentials are never stored on your device.</strong></p>
+
+    <p>The following data may be sent to AI providers for processing:</p>
+    <ul>
+      <li>Fridge contents (product names, quantities) — for recipe and dish suggestions</li>
+      <li>Photos (fridge, food, receipts) — for product and receipt recognition, calorie estimation, and Foodygram analysis</li>
+      <li>Voice audio recordings — for product and calorie voice input recognition</li>
+      <li>Text messages — for AI Chef chat and calorie text input</li>
+      <li>Profile data (dietary type, restrictions, calorie goal) — to personalise AI responses</li>
+      <li>Spending category data — for AI spending advice</li>
+    </ul>
+
+    <p><strong>AI providers used:</strong></p>
+    <ul>
+      <li><strong>Google Gemini 2.5 Flash</strong> (primary provider) — operated by Google LLC</li>
+      <li><strong>Anthropic Claude Sonnet / Haiku</strong> (fallback provider) — operated by Anthropic PBC</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>Important:</strong> Content you submit for AI analysis (photos, voice, text) may be processed and temporarily retained by Google and Anthropic in accordance with their respective privacy policies and data processing terms. Please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.
+    </div>
+
+    <p>AI responses are generated automatically and may not always be accurate. You should not rely solely on AI-generated content for food safety, dietary, or medical decisions.</p>
+  </section>
+
+  <section id="photos-voice">
+    <h3>5. Photos &amp; Voice Input</h3>
+    <p><strong>Photos:</strong> When you take or upload a photo (fridge, food, or receipt), the image is compressed on-device and transmitted securely to our backend (Supabase Storage) and to our AI proxy for analysis. Fridge photos are stored in a private, access-controlled storage bucket. Foodygram food photos are stored in a public storage bucket (as they are intended to be shared in the social feed).</p>
+
+    <p><strong>Voice recordings:</strong> When you use the voice input feature, a short audio recording is captured on your device and transmitted in base64-encoded format to our AI proxy for processing. Voice recordings are not permanently stored on our servers; they are processed in real time and discarded.</p>
+
+    <p>You can revoke microphone and camera permissions at any time through your device settings. Revoking these permissions will disable the corresponding features in the app.</p>
+  </section>
+
+  <section id="foodygram">
+    <h3>6. Foodygram Social Feed</h3>
+    <p>Foodygram is an optional Premium feature that allows users to share photos of food dishes with other Foody users.</p>
+    <ul>
+      <li>Photos you post on Foodygram are stored in a publicly accessible storage bucket and visible to all Foodygram users</li>
+      <li>Your display name and avatar may be visible alongside your posts</li>
+      <li>AI automatically analyses food photos you submit to Foodygram before posting</li>
+      <li>Other users may report posts; posts with multiple reports may be hidden pending review</li>
+      <li>You can delete your own posts at any time within the app</li>
+    </ul>
+    <p>Please do not post photos that contain identifiable people without their consent, or any content that violates our Terms of Use.</p>
+  </section>
+
+  <section id="subscriptions">
+    <h3>7. Subscriptions &amp; Payments</h3>
+    <p>Foody offers optional paid subscriptions (Foody Premium) and in-app purchases. All payment transactions are processed by the following services:</p>
+    <ul>
+      <li><strong>RevenueCat</strong> — our in-app purchase and subscription management platform</li>
+      <li><strong>Apple App Store</strong> — for purchases made on iOS devices</li>
+      <li><strong>Google Play</strong> — for purchases made on Android devices</li>
+    </ul>
+    <p>We do not store your payment card details or billing information. All financial transactions are handled entirely by Apple, Google, and RevenueCat in accordance with their respective privacy policies.</p>
+    <p>RevenueCat may collect anonymous purchase event data and subscription status for the purpose of managing entitlements. Please review <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a> for details.</p>
+    <p>ICE virtual rewards are an in-app virtual currency with no real-world monetary value and are not subject to payment processing.</p>
+  </section>
+
+  <section id="data-storage">
+    <h3>8. Data Storage &amp; Security</h3>
+    <p>Your account data, fridge inventory, recipes, chat history, calorie logs, and other app data are stored in a PostgreSQL database hosted by <strong>Supabase</strong> (supabase.com). Access is protected by Row-Level Security (RLS) policies, meaning each user can only access their own data.</p>
+    <p>Authentication credentials (session tokens) are stored securely on your device using the operating system's secure storage mechanism (iOS Keychain / Android Keystore) via <code>expo-secure-store</code>.</p>
+    <p>Daily usage counters (for rate-limited features) and certain display preferences are stored locally on your device using AsyncStorage and are not transmitted to our servers.</p>
+    <p>We implement reasonable technical and organisational measures to protect your data. However, no system is completely secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <section id="third-parties">
+    <h3>9. Third-Party Services</h3>
+    <p>Foody integrates the following third-party services. Each has its own privacy policy:</p>
+    <ul>
+      <li><strong>Supabase</strong> (database, authentication, storage) — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>Google Gemini</strong> (AI processing) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li><strong>Anthropic Claude</strong> (AI fallback) — <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></li>
+      <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+      <li><strong>Apple App Store</strong> (iOS payments &amp; distribution) — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+      <li><strong>Google Play</strong> (Android payments &amp; distribution) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    </ul>
+    <p>We do not share your personal data with any third parties for marketing or advertising purposes.</p>
+  </section>
+
+  <section id="your-rights">
+    <h3>10. Your Rights</h3>
+    <p>You have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> you may request a copy of the data we hold about you</li>
+      <li><strong>Correction:</strong> you may update your profile information at any time within the app</li>
+      <li><strong>Deletion:</strong> you may request deletion of your account and all associated data by contacting us at <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a>, or by using the "Delete Account" option in the app settings</li>
+      <li><strong>Portability:</strong> you may request a copy of your data in a structured format</li>
+      <li><strong>Withdrawal of consent:</strong> you may revoke camera and microphone permissions at any time in your device settings</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a>. We will respond within 30 days.</p>
+    <div class="info-box">
+      When you delete your account, all your personal data — including fridge items, recipes, chat history, calorie logs, and Foodygram posts — is permanently deleted from our servers. This action is irreversible.
+    </div>
+  </section>
+
+  <section id="children">
+    <h3>11. Children's Privacy</h3>
+    <p>Foody is not directed to children under the age of 13. We do not knowingly collect personal data from children under 13. If we become aware that we have inadvertently collected such data, we will delete it promptly.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal data, please contact us at <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a>.</p>
+  </section>
+
+  <section id="no-advice">
+    <h3>12. Medical &amp; Dietary Disclaimer</h3>
+    <div class="highlight-box">
+      <strong>Foody does not provide medical, nutritional, dietary, or professional advice.</strong> All recipes, calorie estimates, nutrition information, and food suggestions generated by Foody are for general informational purposes only and are produced by AI systems that may not be accurate.
+    </div>
+    <p>You are solely responsible for:</p>
+    <ul>
+      <li>Checking all ingredients for allergens and suitability for your dietary needs</li>
+      <li>Verifying expiration dates and food safety before consuming any products</li>
+      <li>Consulting a qualified medical or nutritional professional regarding your diet and health</li>
+      <li>Ensuring any food you prepare is safe for consumption</li>
+    </ul>
+    <p>Never disregard professional medical advice or delay seeking it because of something you read or received from Foody.</p>
+  </section>
+
+  <section id="changes">
+    <h3>13. Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes, we will update the "Effective Date" at the top of this page and, where appropriate, notify you through the app.</p>
+    <p>Continued use of Foody after changes are posted constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <section id="contact">
+    <h3>14. Contact Us</h3>
+    <p>If you have any questions, requests, or concerns about this Privacy Policy or your data, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:ecoberleco@gmail.com">ecoberleco@gmail.com</a></li>
+      <li><strong>App:</strong> Foody – AI Fridge Assistant</li>
+    </ul>
+    <p>We aim to respond to all enquiries within 30 days.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Foody. All rights reserved.</p>
+  <p>
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-use.html">Terms of Use</a>
+  </p>
+</footer>
+
+</body>
+</html>
